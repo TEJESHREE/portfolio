@@ -1,0 +1,427 @@
+
+/*--------------Global Styles-------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16.5px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+
+}
+
+h1, h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    font-size: 90px;
+    text-decoration: solid;
+    padding: 0;
+}
+
+@media screen and (min-width: 601px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+        margin: 0;
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+        margin: 0;
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+  }
+
+
+
+img {
+    width: 300px;
+}
+
+.section-format {
+    width: 70%;
+    margin:0 auto;
+    padding: 40px;
+}
+
+.projects h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+
+
+/*--------------Profile Styles-------------------*/
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9) ), url(../images/about.png);
+    background-attachment: fixed;
+    background-size: cover;
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+header li {
+    display: inline-block;
+    padding: 20px;
+    border-style: solid;
+    border-color: #894845;
+}
+
+header h2 {
+    padding-bottom: 60px;
+    color: #894845;
+}
+
+a:active a:link a:visited {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    header ul {
+        text-align: center;
+        padding-left: 0;
+        margin-left: 0;
+    }
+  }
+
+
+
+
+
+/*--------------About Styles-------------------*/
+
+.About {
+    background: url(../images/projects-cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    /* margin: 0; */
+    padding-top: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 50px;
+
+}
+
+.About h3 {
+    color: goldenrod;
+    text-align: center;
+}
+
+.About h2 {
+    margin-top: 100px;
+
+}
+
+
+.About h2 {
+    color: #894845;
+}
+
+.About li {
+    color: black;
+    background-color: lightyellow;
+    padding: 15px;
+    padding-left: 2px;
+    padding-left: 2px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.About li:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.About p {
+    text-align: justify;
+}
+
+
+h4 {
+    color: whitesmoke;
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .About li {
+        padding: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-align: center;
+        width: 100px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .About ul {
+        margin : 8px;
+        display: inline-block;
+        padding-right: 100px;
+        margin: 10px;
+        align: right;
+    }
+    .About p {
+        text-align: inherit;
+    }
+  }
+
+
+/*--------------Project Styles-------------------*/
+.projects {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/project.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.projects h2 {
+    margin-top: 60px;
+    text-align: center;
+    color: #CBA879;
+}
+
+.projects h3 {
+    color : #D4B690;
+    text-align: center;
+}
+
+.projects a {
+    text-decoration: underline;
+}
+
+.projects .btn {
+    color: whitesmoke;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #894845;
+    margin: 0;
+}
+
+
+.projects .btn:hover {
+    background-color: #906A38;
+}
+
+
+
+@media screen and (min-width: 601px) {
+    .project-type {
+        overflow: hidden;
+        margin: 20px;
+        width: 65%;
+        flex: 50%;
+        display: inline-block;
+        padding: 30px;
+        /* clear: both; */
+    }
+
+    .notLast-proj {
+        overflow: hidden;
+        margin: 20px;
+        border-bottom: 1px dashed #894845;
+        padding: 30px;
+    }
+
+    .project-type img {
+        float: left;
+        margin: 10px;
+        width: 100%;
+        height: 25%;
+
+    }
+
+    .project-type p{
+
+      text-align: justify;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .projects{
+        width: 100%;
+        padding: 2%;
+        margin: 0;
+        /* margin: 1em;
+        padding: 2.5em; */
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+    }
+  }
+
+.projects p {
+
+    text-align: center;
+    padding-left: 22px;
+}
+
+
+
+/*--------------Work Experience Styles-------------------*/
+.work {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/experience.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    padding-right: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.work p {
+    margin : 5px;
+}
+
+.work li {
+    list-style-type: square;
+}
+
+.work h2{
+    color: #CBA879;
+    text-align: center;
+    padding-right: 130px;
+}
+
+.work h3{
+    color: #CBA879;
+}
+
+
+@media screen and (min-width: 601px) {
+    .section-format-work {
+        width: 100%;
+        padding: 2%;
+        padding-left: 20%;
+        text-align: justify;
+        margin: 0;
+        /* height: 1000px; */
+
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .section-format-work {
+        width: 80%;
+        text-align: initial;
+        margin: 0;
+        padding: 2%;
+        padding-left: 15%;
+        height: 100%;
+    }
+  }
+
+
+/*--------------Education Styles-------------------*/
+
+.education {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/sharon-mccutcheon-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.education h2 {
+    color: #EEE2D2;
+    padding:30px;
+}
+
+.education h3 {
+    color: #EEE2D2;
+    padding-top: 50px;
+}
+
+.education .section-format {
+    /* float: inherit; */
+    /* text-align: justify; */
+    padding: 30px;
+}
+
+
+/*--------------Contact info Styles-------------------*/
+
+footer {
+    background-color: #02020A;
+    color: whitesmoke;
+}
+
+footer .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+
+  footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+  footer .social > a:hover {
+    opacity:0.9;
+  }
+
+  .email:hover {
+
+
+  }
